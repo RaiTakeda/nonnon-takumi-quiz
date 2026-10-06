@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ノンノンかカミナリたくみかクイズ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="window">
+  <div class="titlebar">NONNON or TAKUMI QUIZ</div>
+  <section id="title" class="screen active">
+    <h1>ノンノンか<br>カミナリたくみかクイズ</h1>
+    <p>この発言、どっち？</p><button id="start">スタート</button>
+  </section>
+  <section id="question" class="screen">
+    <div class="status"><span id="qno"></span><span id="score"></span></div>
+    <div class="questionbox" id="questionText"></div>
+    <div class="choices">
+      <button class="character" data-answer="nonnon"><img src="images/nonnon.svg" alt="ノンノン"><strong>ノンノン</strong></button>
+      <button class="character" data-answer="takumi"><img src="images/takumi.svg" alt="カミナリ 石田たくみ"><strong>カミナリ たくみ</strong></button>
+    </div>
+  </section>
+  <section id="answer" class="screen">
+    <h2>正解は…</h2><div id="answerName" class="answer-name"></div>
+    <button id="next">次の問題へ &gt;</button>
+  </section>
+  <section id="result" class="screen">
+    <h2>★ 結果発表 ★</h2><div id="resultScore" class="result-score"></div>
+    <p id="resultMessage"></p><button id="back">タイトルに戻る</button>
+  </section>
+</main>
+<script src="quiz.js"></script>
+</body></html>
