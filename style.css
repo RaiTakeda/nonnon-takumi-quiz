@@ -32,3 +32,5 @@ button:active{border-style:inset}
 .site-footer{text-align:center;padding:12px 8px;background:#fff0a8;border-top:4px double #b8860b;color:#333;font-size:11px;line-height:1.8}
 .counter{font-size:12px}.counter span{display:inline-block;padding:0 5px;background:#111;color:#39ff14;font-family:"Courier New",monospace;border:2px inset #aaa;letter-spacing:2px}
 @media(max-width:600px){body{padding:7px}.site-shell{width:100%}.site-logo{font-size:25px}.screen{padding:18px 13px;min-height:470px}.questionbox{font-size:21px;min-height:125px}.character-row{gap:10px}.character{width:49%;padding:5px}.character img{height:170px}.answer-name{font-size:30px}.site-nav{font-size:11px;letter-spacing:0}}
+.answer-hidden{visibility:hidden}
+.answer-characters{position:relative}
