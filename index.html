@@ -7,27 +7,40 @@
 </head>
 <body>
 <main class="window">
-  <div class="titlebar">NONNON or TAKUMI QUIZ</div>
+  <div class="titlebar"><span>NONNON or TAKUMI QUIZ</span><span class="winbuttons">_ □ ×</span></div>
+  <div class="menubar">クイズ(Q)　ヘルプ(H)</div>
   <section id="title" class="screen active">
-    <h1>ノンノンか<br>カミナリたくみかクイズ</h1>
-    <p>この発言、どっち？</p><button id="start">スタート</button>
+    <div class="panel title-panel">
+      <div class="panel-caption">★ NONNON or TAKUMI ★</div>
+      <h1>ノンノンか<br>カミナリたくみかクイズ</h1>
+      <p>この発言、どっち？</p>
+      <button id="start">スタート</button>
+    </div>
   </section>
   <section id="question" class="screen">
     <div class="status"><span id="qno"></span><span id="score"></span></div>
     <div class="questionbox" id="questionText"></div>
-    <div class="choices">
+    <div class="character-row">
       <button class="character" data-answer="nonnon"><img src="images/nonnon.png" alt="ノンノン"><strong>ノンノン</strong></button>
       <button class="character" data-answer="takumi"><img src="images/takumi.png" alt="カミナリ 石田たくみ"><strong>カミナリ たくみ</strong></button>
     </div>
   </section>
   <section id="answer" class="screen">
-    <h2>正解は…</h2><div id="answerName" class="answer-name"></div>
-    <button id="next">次の問題へ &gt;</button>
+    <div class="status answer-status"><span>ANSWER</span><span>正解発表</span></div>
+    <div class="answerbox"><span>正解は…</span><div id="answerName" class="answer-name"></div><button id="next">次の問題へ &gt;</button></div>
+    <div class="character-row answer-characters">
+      <div class="character display-only"><img src="images/nonnon.png" alt="ノンノン"><strong>ノンノン</strong></div>
+      <div class="character display-only"><img src="images/takumi.png" alt="カミナリ 石田たくみ"><strong>カミナリ たくみ</strong></div>
+    </div>
   </section>
   <section id="result" class="screen">
-    <h2>★ 結果発表 ★</h2><div id="resultScore" class="result-score"></div>
-    <p id="resultMessage"></p><button id="back">タイトルに戻る</button>
+    <div class="panel result-panel">
+      <div class="panel-caption">★ 結果発表 ★</div>
+      <div id="resultScore" class="result-score"></div>
+      <p id="resultMessage"></p><button id="back">タイトルに戻る</button>
+    </div>
   </section>
+  <div class="statusbar"><span>Ready</span><span>NONNON / TAKUMI QUIZ</span></div>
 </main>
 <script src="quiz.js"></script>
 </body></html>
