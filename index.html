@@ -8,7 +8,6 @@
 <body>
 <main class="site-shell">
   <header class="site-header"><div class="site-kicker">★ NONNON or TAKUMI ★</div><div class="site-logo">ノンノンかカミナリたくみかクイズ</div><div class="site-sub">～ この発言、どっち？ ～</div></header>
-  <nav class="site-nav">｜ HOME ｜ QUIZ ｜ PROFILE ｜ LINK ｜</nav>
   <section id="title" class="screen active">
     <div class="panel title-panel">
       <div class="panel-caption">★ NONNON or TAKUMI ★</div>
@@ -29,8 +28,8 @@
     <div class="status answer-status"><span>ANSWER</span><span>正解発表</span></div>
     <div class="answerbox"><span>正解は…</span><div id="answerName" class="answer-name"></div><button id="next">次の問題へ &gt;</button></div>
     <div class="character-row answer-characters">
-      <div class="character display-only"><img src="images/nonnon.png" alt="ノンノン"><strong>ノンノン</strong></div>
-      <div class="character display-only"><img src="images/takumi.png" alt="カミナリ 石田たくみ"><strong>カミナリ たくみ</strong></div>
+      <div id="answerNonnon" class="character display-only"><img src="images/nonnon.png" alt="ノンノン"><strong>ノンノン</strong></div>
+      <div id="answerTakumi" class="character display-only"><img src="images/takumi.png" alt="カミナリ 石田たくみ"><strong>カミナリ たくみ</strong></div>
     </div>
   </section>
   <section id="result" class="screen">
@@ -40,7 +39,7 @@
       <p id="resultMessage"></p><button id="back">タイトルに戻る</button>
     </div>
   </section>
-  <footer class="site-footer"><div>★ NONNON or TAKUMI QUIZ ★</div><div class="counter">あなたは <span>000001</span> 人目の挑戦者です</div><div>Last Update : 2026.10.07</div></footer>
+  <footer class="site-footer"><div>★ NONNON or TAKUMI QUIZ ★</div><div>Last Update : 2026.10.07</div></footer>
 </main>
 <script src="quiz.js"></script>
 </body></html>
