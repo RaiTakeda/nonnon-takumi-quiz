@@ -34,3 +34,9 @@ button:active{border-style:inset}
 @media(max-width:600px){body{padding:7px}.site-shell{width:100%}.site-logo{font-size:25px}.screen{padding:18px 13px;min-height:470px}.questionbox{font-size:21px;min-height:125px}.character-row{gap:10px}.character{width:49%;padding:5px}.character img{height:170px}.answer-name{font-size:30px}.site-nav{font-size:11px;letter-spacing:0}}
 .answer-hidden{visibility:hidden}
 .answer-characters{position:relative}
+
+/* Perfect-score illustration: match the text height without distortion. */
+.result-message-row{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 20px;min-height:36px}
+.result-message-row #resultMessage{margin:0;line-height:1.25}
+#resultSunsun{display:block;height:1.25em;width:auto;max-width:45%;object-fit:contain;font-size:28px}
+#resultSunsun[hidden]{display:none}
